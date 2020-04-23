@@ -10,7 +10,7 @@
     --red: hsl(0, 78%, 62%);
     --cyan: hsl(180, 62%, 55%);
     --orange: hsl(34, 97%, 64%);
-    --blue: hsl(212, 86%, 645);
+    --blue: hsl(212, 86%, 64%);
 
     /* Seconary Colors */
     --very-dark-blue: hsl(234, 12%, 34%);
@@ -18,10 +18,98 @@
     --very-light-gray: hsl(0, 0%, 98%);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before
+*:after {
+    box-sizing: border-box;
+}
+
 body {
     font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: var(--very-light-gray);
+}
+
+/*********************************
+    Header Styles
+*********************************/
+
+/***** Title Section *****/
+#title {
+    padding: 5rem 1.5rem 2rem;
+}
+#title .reliable-title {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+#title .powered-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+#title .header-txt {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /*********************************
     Main Styles
 *********************************/
+main {
+    margin-bottom: 5rem;
+}
+/***** Utility Classes *****/
+.service-card {
+    margin: 1.5rem;
+    box-shadow: 0px 6px 10px var(--grayish-blue);
+    border-radius: 10px;
+    padding: 1.50rem;
+    text-align: left;
+}
+.service-card div {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+/***** Supervisor Section *****/
+#supervisor{
+    border-top: 5px solid var(--cyan);
+}
+
+/***** Team Builder Section *****/
+#teambuilder {
+    border-top: 5px solid var(--red);
+}
+
+/***** Karma Section *****/
+#karma {
+    border-top: 5px solid var(--orange);
+}
+
+/***** Calculator Section *****/
+#calculator {
+    border-top: 5px solid var(--blue);
+}
+
+/*********************************
+    Footer Styles
+*********************************/
+footer {
+    background-color: var(--very-dark-blue);
+    color: white;
+    padding: 1.5rem;
+}
+
+footer a {
+    color: var(--cyan);
+}
+
+footer a:hover {
+    color: var(--red);
+}
+
